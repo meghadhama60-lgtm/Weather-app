@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WeatherSphere</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Top Bar -->
+
+        <header>
+
+            <h1><i class="fa-solid fa-cloud-sun"></i> Weather Sphere</h1>
+
+            <button id="themeBtn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+        </header>
+
+
+
+        <!-- Search Box -->
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                placeholder="Search City..."
+                id="cityInput">
+
+            <button id="searchBtn">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </button>
+
+        </div>
+
+
+
+
+        <!-- Weather Card -->
+
+        <div class="weather-card">
+
+            <img
+                src="https://openweathermap.org/img/wn/01d@2x.png"
+                id="weatherIcon">
+
+            <h2 id="temperature">--°C</h2>
+
+            <h3 id="cityName">City Name</h3>
+
+            <p id="weatherType">Clear Sky</p>
+
+        </div>
+
+
+
+
+
+        <!-- Weather Details -->
+
+        <div class="details">
+
+            <div class="box">
+
+                <i class="fa-solid fa-droplet"></i>
+
+                <h4>Humidity</h4>
+
+                <span id="humidity">--%</span>
+
+            </div>
+
+
+
+            <div class="box">
+
+                <i class="fa-solid fa-wind"></i>
+
+                <h4>Wind</h4>
+
+                <span id="wind">-- km/h</span>
+
+            </div>
+
+
+
+            <div class="box">
+
+                <i class="fa-solid fa-temperature-three-quarters"></i>
+
+                <h4>Feels Like</h4>
+
+                <span id="feelsLike">--°</span>
+
+            </div>
+
+
+
+            <div class="box">
+
+                <i class="fa-solid fa-eye"></i>
+
+                <h4>Visibility</h4>
+
+                <span id="visibility">-- km</span>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
